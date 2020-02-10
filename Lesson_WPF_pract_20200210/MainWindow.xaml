@@ -5,8 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Lesson_WPF_pract_20200210"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-          
-    </Grid>
+        Title="MainWindow" Height="450" Width="450">
+    <DockPanel LastChildFill="True">
+        <Grid DockPanel.Dock="Top" Height="100">
+            <Grid.Background>
+                <ImageBrush ImageSource="C:\Users\ОрловВ\source\repos\Lesson_WPF_pract_20200210\Lesson_WPF_pract_20200210\library.jpg"/>
+            </Grid.Background>
+        </Grid>
+        <Grid DockPanel.Dock="Bottom" Height="100"></Grid>
+        <StackPanel>
+            <TextBox HorizontalAlignment="Center"
+                     Width="200"
+                     Height="30"
+                     Margin="20"
+                     FontSize="20">Bill Gates</TextBox>
+            <PasswordBox HorizontalAlignment="Center"
+                         Width="200"
+                         Height="30"
+                         FontSize="20"></PasswordBox>
+            <Button HorizontalAlignment="Center"
+                    Width="200"
+                    Height="30"
+                    Margin="20"
+                    Content="Enter"></Button>
+        </StackPanel>
+    </DockPanel>
 </Window>
